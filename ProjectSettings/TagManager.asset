@@ -14,9 +14,9 @@ TagManager:
   - 
   - 
   - Ground
-  - 
-  - 
-  - 
+  - Marker
+  - DirectionalLight
+  - MiniMapCamera
   - 
   - 
   - 
