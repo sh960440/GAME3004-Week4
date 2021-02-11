@@ -21,10 +21,14 @@ public class PlayerBehavior : MonoBehaviour
     [Header("Character Controller")]
     public CharacterController controller;
 
+    [Header("MiniMap")]
+    public GameObject miniMap;
+
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        miniMap.SetActive(false);
     }
 
 
@@ -54,6 +58,12 @@ public class PlayerBehavior : MonoBehaviour
         // Gravity
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+        // Toggle mini map
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            miniMap.SetActive(!miniMap.activeInHierarchy);
+        }
     }
 
     void OnDrawGizmos()
