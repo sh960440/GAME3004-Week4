@@ -24,6 +24,10 @@ public class PlayerBehavior : MonoBehaviour
     [Header("MiniMap")]
     public GameObject miniMap;
 
+    [Header("Selection Properties")]
+    public Transform playerCamera;
+    public Material selectable;
+
 
     void Start()
     {
@@ -34,6 +38,15 @@ public class PlayerBehavior : MonoBehaviour
 
     void Update()
     {
+        RaycastHit hit;
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, 200.0f))
+        {
+            if (hit.transform.gameObject.CompareTag("Selectable"))
+            {
+                hit.transform.gameObject.GetComponent<MeshRenderer>().material = selectable;
+            }
+        }
+
         isGrounded = Physics.CheckSphere(groundCheck.position, groundRadius, groundMask);
 
         if (isGrounded && velocity.y < 0)
@@ -70,5 +83,6 @@ public class PlayerBehavior : MonoBehaviour
     {
         Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
+        Gizmos.DrawLine(playerCamera.position, playerCamera.forward * 100.0f);
     }
 }
