@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7953734431044559511}
   - component: {fileID: 7953734431044559510}
   - component: {fileID: 7953734431044559506}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: HealthBar-WorldSpace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,6 +207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthBar
       objectReference: {fileID: 0}
+    - target: {fileID: 8010841918403712398, guid: 9229c1d6752c97d4cb528fd3c5710fec, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 8010841918822760796, guid: 9229c1d6752c97d4cb528fd3c5710fec, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -214,6 +218,18 @@ PrefabInstance:
     - target: {fileID: 8010841918822760796, guid: 9229c1d6752c97d4cb528fd3c5710fec, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010841918822760797, guid: 9229c1d6752c97d4cb528fd3c5710fec, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010841919540365126, guid: 9229c1d6752c97d4cb528fd3c5710fec, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010841919783757618, guid: 9229c1d6752c97d4cb528fd3c5710fec, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9229c1d6752c97d4cb528fd3c5710fec, type: 3}

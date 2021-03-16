@@ -20,7 +20,7 @@ TagManager:
   - DirectionalLight
   - MiniMapCamera
   - PostProcessing
-  - 
+  - HealthBar
   - Actor
   - 
   - 
