@@ -43,4 +43,10 @@ public class HealthBar : MonoBehaviour
         healthBarSlider.value -= damage;
         currentHealth -= damage;
     }
+
+    public void SetHealth(int healthValue)
+    {
+        healthBarSlider.value = healthValue;
+        currentHealth = healthValue;
+    }
 }

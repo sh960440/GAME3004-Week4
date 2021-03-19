@@ -32,6 +32,13 @@ public class PlayerBehavior : MonoBehaviour
     public Transform playerCamera;
     public Material selectable;
 
+    [Header("Control Panel")]
+    public GameObject controlPanel;
+
+    [Header("Player Attributes")]
+    public HealthBar healthBar;
+    [Range(0, 100)]
+    public int health;
 
     void Start()
     {
@@ -84,6 +91,8 @@ public class PlayerBehavior : MonoBehaviour
         {
             miniMap.SetActive(!miniMap.activeInHierarchy);
         }
+
+        healthBar.SetHealth(health);
     }
 
     void OnDrawGizmos()
@@ -111,5 +120,10 @@ public class PlayerBehavior : MonoBehaviour
     public void onXButtonPressed()
     {
 
+    }
+
+    public void onIButtonPressed()
+    {
+        controlPanel.SetActive(!controlPanel.activeInHierarchy);
     }
 }
