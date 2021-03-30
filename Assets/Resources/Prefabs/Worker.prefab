@@ -448,7 +448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4758755223837858613}
   - component: {fileID: 137408312350293078}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ch17_Shirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -891,7 +891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7074086312985029338}
   - component: {fileID: 6228340726265371679}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ch17_Pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -987,7 +987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3308281203938130994}
   - component: {fileID: 518493534498629295}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ch17_Boots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1373,7 +1373,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4191797073230663928}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.6
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1767,7 +1767,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7144837704723004311}
   - component: {fileID: 4398537387698046648}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ch17_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1933,7 +1933,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4745670417462034487}
   - component: {fileID: 6223735998799672649}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ch17_Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2022,7 +2022,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7056399388831965159}
   - component: {fileID: 830376294727731435}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ch17_Eyelashes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2268,7 +2268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1256219830824718767}
   - component: {fileID: 7780298407939850669}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ch17_Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2390,7 +2390,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1831661929392956523}
   - component: {fileID: 6596994067155346033}
-  m_Layer: 0
+  - component: {fileID: 5842804181267868818}
+  m_Layer: 14
   m_Name: Ch17_Vest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2475,6 +2476,20 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0018148124, y: 0.29803133, z: 0.012586623}
     m_Extent: {x: 0.23534009, y: 0.31327313, z: 0.1614986}
   m_DirtyAABB: 0
+--- !u!136 &5842804181267868818
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7995695729152307423}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.35
+  m_Height: 1.7855656
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.8868671, z: 0}
 --- !u!1 &8229424077673032490
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,7 +29,10 @@ public class EnemyBehavior : MonoBehaviour
         player = FindObjectOfType<PlayerBehavior>();
         controller = GetComponent<Animator>();
 
-        controller.SetInteger("AnimState", (int)EnemyState.RUN);
+        if (controller)
+        {
+            controller.SetInteger("AnimState", (int)EnemyState.RUN);
+        }     
     }
 
     // Update is called once per frame
@@ -38,6 +41,14 @@ public class EnemyBehavior : MonoBehaviour
         if (player)
         {
             navMeshAgent.SetDestination(player.transform.position);
+
+            var distance = Vector3.Distance(player.transform.position, transform.position);
+            if ((controller) && (distance <= 3.0f))
+            {
+                //var direction = Vector3.Normalize(player.transform.position - transform.position);
+                //transform.LookAt(player.transform.position - new Vector3(0.0f, 0.5f, 0.0f));
+                controller.SetInteger("AnimState", (int)EnemyState.PUNCH);
+            }
         }
     }
 }
