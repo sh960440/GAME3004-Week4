@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -45,10 +44,17 @@ public class EnemyBehavior : MonoBehaviour
             var distance = Vector3.Distance(player.transform.position, transform.position);
             if ((controller) && (distance <= 3.0f))
             {
-                //var direction = Vector3.Normalize(player.transform.position - transform.position);
-                //transform.LookAt(player.transform.position - new Vector3(0.0f, 0.5f, 0.0f));
+                LookAtPlayer();
+                
                 controller.SetInteger("AnimState", (int)EnemyState.PUNCH);
             }
         }
+    }
+
+    void LookAtPlayer()
+    {
+        Vector3 rot = Quaternion.LookRotation(player.transform.position - transform.position).eulerAngles;
+        rot.x = rot.z = 0;
+        transform.rotation = Quaternion.Euler(rot);
     }
 }

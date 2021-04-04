@@ -15,13 +15,19 @@ public class HealthBarController : MonoBehaviour
         healthBarCanvas = GetComponent<Canvas>();
 
         playerCamera = GameObject.Find("MainCamera");
-        worldCamera = playerCamera.GetComponent<Camera>();
-        healthBarCanvas.worldCamera = worldCamera;
+        if (playerCamera)
+        {
+            worldCamera = playerCamera.GetComponent<Camera>();
+            healthBarCanvas.worldCamera = worldCamera;
+        }
     }
 
     
     void LateUpdate()
     {   
-        transform.LookAt(transform.position + worldCamera.transform.forward);
+        if (worldCamera)
+        {
+            transform.LookAt(transform.position + worldCamera.transform.forward);
+        } 
     }
 }
