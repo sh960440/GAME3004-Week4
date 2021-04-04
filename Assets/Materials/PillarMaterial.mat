@@ -8,18 +8,29 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PillarMaterial
-  m_Shader: {fileID: 47, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: -6465566751694194690, guid: 020794c494bdcba488214b8c135d196b, type: 3}
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_3595bf1d67af457ead6f388d57b9554f:
+        m_Texture: {fileID: 2800000, guid: e5046a34ec71dbf48881ce42684aba2a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_e9c5fef57a304b84a3af112584bc40f6:
+        m_Texture: {fileID: 2800000, guid: 4ebfd7bacc6db6948aede893784bcec7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_eecc23b13e3b4676acf60ff9b05b526d:
+        m_Texture: {fileID: 2800000, guid: da555f966c4a09f4888db7f99c09ed09, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: da555f966c4a09f4888db7f99c09ed09, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -60,7 +71,24 @@ Material:
         m_Texture: {fileID: 2800000, guid: 38eb07a2c33f0ac42bb27cc4ab9b7eab, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Boolean_491fc53631bf4da782ff883f34abe543: 1
+    - Vector1_0bc8948b689f4c7da300b1330b9a34bc: 0.1
+    - Vector1_159957a0f065403cbcd44bc20cf5e8d0: 0.2
+    - Vector1_31ac47a1e31a4d828379ab28e1d2e827: 1
+    - Vector1_66c7e0a955ee4d07ac5693ad7fc95737: 1
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -76,8 +104,18 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _UseAoMap: 1
+    - _UseColorMap: 1
+    - _UseEmissiveMap: 0
+    - _UseMetallicMap: 0
+    - _UseNormalMap: 1
+    - _UseRoughnessMap: 1
     - _ZWrite: 0
     m_Colors:
+    - Color_10f7587e475a4e76aea7fcd8e5bfa151: {r: 1, g: 1, b: 1, a: 0}
+    - Color_27471dbc707940739bb68a00c9ab0b3f: {r: 8, g: 6.462745, b: 0, a: 0}
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _UvOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _UvTiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
